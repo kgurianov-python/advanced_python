@@ -16,7 +16,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(expected, actual)
 
     def test_odd(self):
-        expected = list(range(1, self.MAX_VAL))
+        expected = list(range(1, self.MAX_VAL, 2))
         actual = list(the_odd_even_gen(Mode.ODD, self.MAX_VAL))
         self.assertEqual(expected, actual)
 
